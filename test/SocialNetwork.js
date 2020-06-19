@@ -29,7 +29,7 @@ contract("SocialNetwork", ([deployer, author, tipper]) => {
 
   describe("posts", async () => {
     let result, postCount;
-
+    console.log(author);
     before(async () => {
       result = await socialNetwork.createPost("This is my first post", {
         from: author,
